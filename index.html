@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+    <nav class="result hidding">
+        <h3></h3>
+
+    </nav>
+    <h2 class="element"></h2>
+
+    <div class="high-score">
+
+        <label class="hidden score"> Marks : <span id="score">0</span></label>
+        <button id="restart" class="hidden" onclick="location.reload();">Restart</button>
+
+
+    </div>
+    <div class="container hidden">
+
+
+
+        <h1 class="question" id="qust"></h1>
+        <div>
+            <div>
+                
+                <input type="radio" name="option" id="op1" class="button">
+                <label for="op1" id="option1"></label>
+            </div>
+
+            <div>
+                
+                <input type="radio" name="option" id="op2" class="button">
+                <label for="op2" id="option2"></label>
+            </div>
+
+            <div>
+                
+                <input type="radio" name="option" id="op3" class="button">
+                <label for="op3" id="option3"></label>
+            </div>
+
+            <div>
+                
+                <input type="radio" name="option" id="op4" class="button">
+                <label for="op4" id="option4"></label>
+            </div>
+        </div>
+        <div class="checking">
+            <button class="btn" id="submit-btn">Submit</button>
+        </div>
+
+    </div>
+    <div id="start-next" class="show">
+        <button id="start">Start</button>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed('.element', {
+            strings: ["Quiz App", "Fronted Developer", "Yasir Mukhtar"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        });
+    </script>
+</body>
+
+<script src="script.js"></script>
+
+</html>
